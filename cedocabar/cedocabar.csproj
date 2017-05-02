@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F03EF79F-E451-4C52-8E10-F5EF1A03A769}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cedocabar</RootNamespace>
+    <AssemblyName>cedocabar</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\cedocabar\cedocabar\bin\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.11.92, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\cedocabar\cedocabar\bin\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.2.0.Npgsql, Version=0.0.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\cedocabar\cedocabar\bin\policy.2.0.Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Cajeros\Default.aspx" />
+    <Content Include="Cajeros\org_geografica.aspx" />
+    <Content Include="CardiologiaAd\Antecedentes.aspx" />
+    <Content Include="CardiologiaAd\Calendario.aspx" />
+    <Content Include="CardiologiaAd\ConsultasPrev.aspx" />
+    <Content Include="CardiologiaAd\DatosObj.aspx" />
+    <Content Include="CardiologiaAd\DatosPaciente.aspx" />
+    <Content Include="CardiologiaAd\Default.aspx" />
+    <Content Include="CardiologiaAd\DiagnosticosIng.aspx" />
+    <Content Include="CardiologiaAd\Download.aspx" />
+    <Content Include="CardiologiaAd\ECG.aspx" />
+    <Content Include="CardiologiaAd\ExamenesPrev.aspx" />
+    <Content Include="CardiologiaAd\ExamenF.aspx" />
+    <Content Include="CardiologiaAd\frmMorbilidad.aspx" />
+    <Content Include="CardiologiaAd\Herencia.aspx" />
+    <Content Include="CardiologiaAd\Insert.aspx" />
+    <Content Include="CardiologiaAd\Modificar.aspx" />
+    <Content Include="CardiologiaAd\Morbilidad.aspx" />
+    <Content Include="CardiologiaAd\org_geografica.aspx" />
+    <Content Include="CardiologiaInf\Antecedentes.aspx" />
+    <Content Include="CardiologiaInf\Calendario.aspx" />
+    <Content Include="CardiologiaInf\ConsultasPrev.aspx" />
+    <Content Include="CardiologiaInf\DatosObj.aspx" />
+    <Content Include="CardiologiaInf\DatosPaciente.aspx" />
+    <Content Include="CardiologiaInf\Default.aspx" />
+    <Content Include="CardiologiaInf\DiagnosticosIng.aspx" />
+    <Content Include="CardiologiaInf\ECG.aspx" />
+    <Content Include="CardiologiaInf\ExamenesPrev.aspx" />
+    <Content Include="CardiologiaInf\ExamenF.aspx" />
+    <Content Include="CardiologiaInf\frmMorbilidad.aspx" />
+    <Content Include="CardiologiaInf\Herencia.aspx" />
+    <Content Include="CardiologiaInf\Insert.aspx" />
+    <Content Include="CardiologiaInf\Modificar.aspx" />
+    <Content Include="CardiologiaInf\Morbilidad.aspx" />
+    <Content Include="CardiologiaInf\org_geografica.aspx" />
+    <Content Include="conector\loading.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="denegado.aspx" />
+    <Content Include="Examenes\Default.aspx" />
+    <Content Include="Facturacione\Default.aspx" />
+    <Content Include="Facturacione\frmBPaciente.aspx" />
+    <Content Include="Facturacione\Insert.aspx" />
+    <Content Include="Facturacionp\Default.aspx" />
+    <Content Include="Facturacionp\frmBPaciente.aspx" />
+    <Content Include="Facturacionp\Insert.aspx" />
+    <Content Include="Facturacion\Default.aspx" />
+    <Content Include="Facturacion\frmBPaciente.aspx" />
+    <Content Include="Facturacion\Insert.aspx" />
+    <Content Include="Imagenes\1x1.gif" />
+    <Content Include="Imagenes\banner.png" />
+    <Content Include="Imagenes\bannercedocabar.png" />
+    <Content Include="Imagenes\bottom.gif" />
+    <Content Include="Imagenes\bottom.jpg" />
+    <Content Include="Imagenes\calback.jpg" />
+    <Content Include="Imagenes\cancelar.gif" />
+    <Content Include="Imagenes\close.gif" />
+    <Content Include="Imagenes\CntMnuAtoZ.gif" />
+    <Content Include="Imagenes\CntMnuBg.gif" />
+    <Content Include="Imagenes\CntMnuDelete.gif" />
+    <Content Include="Imagenes\CntMnuDetails.gif" />
+    <Content Include="Imagenes\CntMnuEdit.gif" />
+    <Content Include="Imagenes\CntMnuFilter.gif" />
+    <Content Include="Imagenes\CntMnuFilterDel.gif" />
+    <Content Include="Imagenes\CntMnuNew.gif" />
+    <Content Include="Imagenes\CntMnuZtoA.gif" />
+    <Content Include="Imagenes\download.gif" />
+    <Content Include="Imagenes\drop1.gif" />
+    <Content Include="Imagenes\drop2.gif" />
+    <Content Include="Imagenes\Floppy_disk.gif" />
+    <Content Include="Imagenes\folderClosed.gif" />
+    <Content Include="Imagenes\folderOpen.gif" />
+    <Content Include="Imagenes\fondo.gif" />
+    <Content Include="Imagenes\fondo.png" />
+    <Content Include="Imagenes\form.png" />
+    <Content Include="Imagenes\form_add.png" />
+    <Content Include="Imagenes\form_edit.gif" />
+    <Content Include="Imagenes\form_edit.png" />
+    <Content Include="Imagenes\form_email.png" />
+    <Content Include="Imagenes\form_error.png" />
+    <Content Include="Imagenes\form_go.gif" />
+    <Content Include="Imagenes\form_go.png" />
+    <Content Include="Imagenes\form_remove.png" />
+    <Content Include="Imagenes\form_save.gif" />
+    <Content Include="Imagenes\form_save.png" />
+    <Content Include="Imagenes\form_search.png" />
+    <Content Include="Imagenes\form_warning.png" />
+    <Content Include="Imagenes\Forward.gif" />
+    <Content Include="Imagenes\home.png" />
+    <Content Include="Imagenes\iconText.gif" />
+    <Content Include="Imagenes\left1.gif" />
+    <Content Include="Imagenes\left2.gif" />
+    <Content Include="Imagenes\line.gif" />
+    <Content Include="Imagenes\line1.gif" />
+    <Content Include="Imagenes\line2.gif" />
+    <Content Include="Imagenes\line3.gif" />
+    <Content Include="Imagenes\line4.gif" />
+    <Content Include="Imagenes\logo.ico" />
+    <Content Include="Imagenes\logo.png" />
+    <Content Include="Imagenes\logo_fondo.png" />
+    <Content Include="Imagenes\logo_fondo_n.png" />
+    <Content Include="Imagenes\logo_transp.gif" />
+    <Content Include="Imagenes\logo_transp.png" />
+    <Content Include="Imagenes\minus.gif" />
+    <Content Include="Imagenes\minus1.gif" />
+    <Content Include="Imagenes\minus2.gif" />
+    <Content Include="Imagenes\minus3.gif" />
+    <Content Include="Imagenes\minus4.gif" />
+    <Content Include="Imagenes\minus5.gif" />
+    <Content Include="Imagenes\PageFirst.gif" />
+    <Content Include="Imagenes\PageFirstDis.gif" />
+    <Content Include="Imagenes\PageFirstOver.gif" />
+    <Content Include="Imagenes\PageLast.gif" />
+    <Content Include="Imagenes\PageLastDis.gif" />
+    <Content Include="Imagenes\PageLastOver.gif" />
+    <Content Include="Imagenes\PageNextDis.gif" />
+    <Content Include="Imagenes\PageNextOver.gif" />
+    <Content Include="Imagenes\PagePrev.gif" />
+    <Content Include="Imagenes\PagePrevDis.gif" />
+    <Content Include="Imagenes\PagePrevOver.gif" />
+    <Content Include="Imagenes\page_add.png" />
+    <Content Include="Imagenes\plus.gif" />
+    <Content Include="Imagenes\plus1.gif" />
+    <Content Include="Imagenes\plus2.gif" />
+    <Content Include="Imagenes\plus3.gif" />
+    <Content Include="Imagenes\plus4.gif" />
+    <Content Include="Imagenes\plus5.gif" />
+    <Content Include="Imagenes\printer.png" />
+    <Content Include="Imagenes\right1.gif" />
+    <Content Include="Imagenes\right2.gif" />
+    <Content Include="Imagenes\RowFilterDis.gif" />
+    <Content Include="Imagenes\RowFilterOff.gif" />
+    <Content Include="Imagenes\RowFilterOffOver.gif" />
+    <Content Include="Imagenes\RowFilterOn.gif" />
+    <Content Include="Imagenes\RowFilterOnOver.gif" />
+    <Content Include="Imagenes\RowNew.gif" />
+    <Content Include="Imagenes\RowNewOver.gif" />
+    <Content Include="Imagenes\save_labled.png" />
+    <Content Include="Imagenes\search-edit.png" />
+    <Content Include="Imagenes\sign_add.png" />
+    <Content Include="Imagenes\sign_cacel.png" />
+    <Content Include="Imagenes\sign_copyright.png" />
+    <Content Include="Imagenes\sign_deny.png" />
+    <Content Include="Imagenes\sign_error.png" />
+    <Content Include="Imagenes\sign_explain.png" />
+    <Content Include="Imagenes\sign_info.png" />
+    <Content Include="Imagenes\sign_question.png" />
+    <Content Include="Imagenes\sign_remove.png" />
+    <Content Include="Imagenes\sign_tick.png" />
+    <Content Include="Imagenes\sign_warning.png" />
+    <Content Include="Imagenes\top.gif" />
+    <Content Include="Imagenes\topwin.gif" />
+    <Content Include="MedicinaInterna\Antecedentes.aspx" />
+    <Content Include="MedicinaInterna\ConsultasPrev.aspx" />
+    <Content Include="MedicinaInterna\DatosPaciente.aspx" />
+    <Content Include="MedicinaInterna\Default.aspx" />
+    <Content Include="MedicinaInterna\Download.aspx" />
+    <Content Include="MedicinaInterna\ECG.aspx" />
+    <Content Include="MedicinaInterna\ExamenesPrev.aspx" />
+    <Content Include="MedicinaInterna\ExamenF.aspx" />
+    <Content Include="MedicinaInterna\frmMorbilidad.aspx" />
+    <Content Include="MedicinaInterna\Insert.aspx" />
+    <Content Include="MedicinaInterna\Modificar.aspx" />
+    <Content Include="MedicinaInterna\Morbilidad.aspx" />
+    <Content Include="Medicos\Default.aspx" />
+    <Content Include="Medicos\Mserviciosmedico.aspx" />
+    <Content Include="Medicos\org_geografica.aspx" />
+    <Content Include="Medicos\serviciosmedico.aspx" />
+    <Content Include="fondo.htm" />
+    <Content Include="Menu\Menu.aspx" />
+    <Content Include="Ocupacion\Default.aspx" />
+    <Content Include="Pacientes\Calendario.aspx" />
+    <Content Include="Pacientes\Default.aspx" />
+    <Content Include="Pacientes\Herencia.aspx" />
+    <Content Include="Pacientes\org_geografica.aspx" />
+    <Content Include="Salida.aspx" />
+    <Content Include="Scripts\Antecedentes.js" />
+    <Content Include="Scripts\cajero.js" />
+    <Content Include="Scripts\codificadores.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\correo.js" />
+    <Content Include="Scripts\DatosPaciente_SBM.js" />
+    <Content Include="Scripts\facturacion.js" />
+    <Content Include="Scripts\frmBPacien.js" />
+    <Content Include="Scripts\hrnca.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\medico.js" />
+    <Content Include="Scripts\org_geografica.js" />
+    <Content Include="Scripts\pacientes.js" />
+    <Content Include="Scripts\popcalendar.js" />
+    <Content Include="Scripts\subModal.js" />
+    <Content Include="Scripts\subModal_Md.js" />
+    <Content Include="Scripts\subModal_Pacient.js" />
+    <Content Include="Servicios\Default.aspx" />
+    <Content Include="Session\Default.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Skin Style.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\subModal.css" />
+    <Content Include="TerapiaResp\ConsultasPrev.aspx" />
+    <Content Include="TerapiaResp\DatosPaciente.aspx" />
+    <Content Include="TerapiaResp\Default.aspx" />
+    <Content Include="TerapiaResp\ExamenesPrev.aspx" />
+    <Content Include="TerapiaResp\ExamenF.aspx" />
+    <Content Include="TerapiaResp\frmMorbilidad.aspx" />
+    <Content Include="TerapiaResp\Insert.aspx" />
+    <Content Include="TerapiaResp\Modificar.aspx" />
+    <Content Include="TerapiaResp\Morbilidad.aspx" />
+    <Content Include="TerapiaResp\Terapia.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cajeros\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cajeros\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cajeros\org_geografica.aspx.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cajeros\org_geografica.aspx.designer.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Antecedentes.aspx.cs">
+      <DependentUpon>Antecedentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Antecedentes.aspx.designer.cs">
+      <DependentUpon>Antecedentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Calendario.aspx.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Calendario.aspx.designer.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\ConsultasPrev.aspx.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\ConsultasPrev.aspx.designer.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\DatosObj.aspx.cs">
+      <DependentUpon>DatosObj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\DatosObj.aspx.designer.cs">
+      <DependentUpon>DatosObj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\DatosPaciente.aspx.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\DatosPaciente.aspx.designer.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\DiagnosticosIng.aspx.cs">
+      <DependentUpon>DiagnosticosIng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\DiagnosticosIng.aspx.designer.cs">
+      <DependentUpon>DiagnosticosIng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\ECG.aspx.cs">
+      <DependentUpon>ECG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\ECG.aspx.designer.cs">
+      <DependentUpon>ECG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\ExamenesPrev.aspx.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\ExamenesPrev.aspx.designer.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\ExamenF.aspx.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\ExamenF.aspx.designer.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\frmMorbilidad.aspx.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\frmMorbilidad.aspx.designer.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Herencia.aspx.cs">
+      <DependentUpon>Herencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Herencia.aspx.designer.cs">
+      <DependentUpon>Herencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\Morbilidad.aspx.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\Morbilidad.aspx.designer.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaAd\org_geografica.aspx.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaAd\org_geografica.aspx.designer.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\Antecedentes.aspx.cs">
+      <DependentUpon>Antecedentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\Antecedentes.aspx.designer.cs">
+      <DependentUpon>Antecedentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\Calendario.aspx.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\Calendario.aspx.designer.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\ConsultasPrev.aspx.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\ConsultasPrev.aspx.designer.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\DatosObj.aspx.cs">
+      <DependentUpon>DatosObj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\DatosObj.aspx.designer.cs">
+      <DependentUpon>DatosObj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\DatosPaciente.aspx.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\DatosPaciente.aspx.designer.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\DiagnosticosIng.aspx.cs">
+      <DependentUpon>DiagnosticosIng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\DiagnosticosIng.aspx.designer.cs">
+      <DependentUpon>DiagnosticosIng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\ECG.aspx.cs">
+      <DependentUpon>ECG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\ECG.aspx.designer.cs">
+      <DependentUpon>ECG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\ExamenesPrev.aspx.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\ExamenesPrev.aspx.designer.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\ExamenF.aspx.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\ExamenF.aspx.designer.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\frmMorbilidad.aspx.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\frmMorbilidad.aspx.designer.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\Herencia.aspx.cs">
+      <DependentUpon>Herencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\Herencia.aspx.designer.cs">
+      <DependentUpon>Herencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\Morbilidad.aspx.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\Morbilidad.aspx.designer.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardiologiaInf\org_geografica.aspx.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardiologiaInf\org_geografica.aspx.designer.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="conector\conector.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="denegado.aspx.cs">
+      <DependentUpon>denegado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="denegado.aspx.designer.cs">
+      <DependentUpon>denegado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Examenes\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Examenes\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacione\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacione\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacione\frmBPaciente.aspx.cs">
+      <DependentUpon>frmBPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacione\frmBPaciente.aspx.designer.cs">
+      <DependentUpon>frmBPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacione\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacione\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacionp\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacionp\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacionp\frmBPaciente.aspx.cs">
+      <DependentUpon>frmBPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacionp\frmBPaciente.aspx.designer.cs">
+      <DependentUpon>frmBPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacionp\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacionp\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\frmBPaciente.aspx.cs">
+      <DependentUpon>frmBPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion\frmBPaciente.aspx.designer.cs">
+      <DependentUpon>frmBPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facturacion\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\Antecedentes.aspx.cs">
+      <DependentUpon>Antecedentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\Antecedentes.aspx.designer.cs">
+      <DependentUpon>Antecedentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\ConsultasPrev.aspx.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\ConsultasPrev.aspx.designer.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\DatosPaciente.aspx.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\DatosPaciente.aspx.designer.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\ECG.aspx.cs">
+      <DependentUpon>ECG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\ECG.aspx.designer.cs">
+      <DependentUpon>ECG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\ExamenesPrev.aspx.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\ExamenesPrev.aspx.designer.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\ExamenF.aspx.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\ExamenF.aspx.designer.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\frmMorbilidad.aspx.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\frmMorbilidad.aspx.designer.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinaInterna\Morbilidad.aspx.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicinaInterna\Morbilidad.aspx.designer.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicos\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos\Mserviciosmedico.aspx.cs">
+      <DependentUpon>Mserviciosmedico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicos\Mserviciosmedico.aspx.designer.cs">
+      <DependentUpon>Mserviciosmedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos\org_geografica.aspx.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicos\org_geografica.aspx.designer.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos\serviciosmedico.aspx.cs">
+      <DependentUpon>serviciosmedico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medicos\serviciosmedico.aspx.designer.cs">
+      <DependentUpon>serviciosmedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ocupacion\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ocupacion\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\Calendario.aspx.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pacientes\Calendario.aspx.designer.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pacientes\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\Herencia.aspx.cs">
+      <DependentUpon>Herencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pacientes\Herencia.aspx.designer.cs">
+      <DependentUpon>Herencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pacientes\org_geografica.aspx.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pacientes\org_geografica.aspx.designer.cs">
+      <DependentUpon>org_geografica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salida.aspx.cs">
+      <DependentUpon>Salida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Salida.aspx.designer.cs">
+      <DependentUpon>Salida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Servicios\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\ConsultasPrev.aspx.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\ConsultasPrev.aspx.designer.cs">
+      <DependentUpon>ConsultasPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\DatosPaciente.aspx.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\DatosPaciente.aspx.designer.cs">
+      <DependentUpon>DatosPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\ExamenesPrev.aspx.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\ExamenesPrev.aspx.designer.cs">
+      <DependentUpon>ExamenesPrev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\ExamenF.aspx.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\ExamenF.aspx.designer.cs">
+      <DependentUpon>ExamenF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\frmMorbilidad.aspx.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\frmMorbilidad.aspx.designer.cs">
+      <DependentUpon>frmMorbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\Insert.aspx.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\Insert.aspx.designer.cs">
+      <DependentUpon>Insert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\Morbilidad.aspx.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\Morbilidad.aspx.designer.cs">
+      <DependentUpon>Morbilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TerapiaResp\Terapia.aspx.cs">
+      <DependentUpon>Terapia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TerapiaResp\Terapia.aspx.designer.cs">
+      <DependentUpon>Terapia.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Imagenes\ecg\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1314</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\cedocabar.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\cedocabar.pdb
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\Mono.Security.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\Npgsql.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\policy.2.0.Npgsql.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\Npgsql.pdb
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\Npgsql.xml
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\de\Npgsql.resources.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\es\Npgsql.resources.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\fi\Npgsql.resources.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\fr\Npgsql.resources.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\ja\Npgsql.resources.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\zh-CN\Npgsql.resources.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\bin\policy.2.0.Npgsql.config
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\obj\Debug\cedocabar.dll
+c:\documents and settings\robert\mis documentos\visual studio 2010\Projects\cedocabar\cedocabar\obj\Debug\cedocabar.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\cedocabar\cedocabar\bin\cedocabar.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\cedocabar\cedocabar\bin\cedocabar.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\cedocabar\cedocabar\bin\policy.2.0.Npgsql.config
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\cedocabar\cedocabar\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\cedocabar\cedocabar\obj\Debug\cedocabar.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\cedocabar\cedocabar\obj\Debug\cedocabar.pdb

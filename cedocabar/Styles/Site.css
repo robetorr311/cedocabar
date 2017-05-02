@@ -1,0 +1,274 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #9bcdff;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+.bodyform   
+{
+    background: #9bcdff;
+	background-image:url(../Imagenes/fondo.gif);
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+a:link, a:visited
+{
+    color: #ffffff;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+.topbottom {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+}
+.topbanner
+{
+    color: #89b5d4;
+    background: #ffffff;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	font-size:18px;
+	font-weight:bold;
+    padding-bottom:0px;
+    padding-top:0px;  
+    padding-left:0px;
+    padding-right:0px; 	    
+}
+.banner
+{
+    color: #89b5d4;
+    background: #89b5d4;
+    padding-bottom:0px;
+    padding-top:0px;  
+    padding-left:0px;
+    padding-right:0px;
+    border-spacing:0px;      
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	    
+}
+.loginDisplay
+{
+    color: #CC3333;
+    background: #ffffff;
+	border-bottom:1px solid #ccc;
+	border-left:none;
+	border-right:none;
+	border-top:none;    
+}
+.tituloform
+{
+    color: #CC3333;
+    background: #ffffff;
+	border-bottom:1px solid #9bcdff;
+	border-left:none;
+	border-right:none;
+	border-top:none;    
+}
+.tituloform
+{
+    color: #FFFFFF;
+    background: #465c71;
+    font-family:Arial;
+    font-size:18px;
+    font-weight:bold;   
+	border-bottom:1px solid #9bcdff;
+	border-left:none;
+	border-right:none;
+	border-top:none;    
+}
+.encabezado
+{
+    
+    font-size:larger;
+    font-weight:bold;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background:#CC3333;
+    width: 100%;
+    color: #ffffff;
+    height:30px;    
+    display: block;
+}
+.tdmenu 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	text-decoration:none;
+	font-size:10px;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	background-color:#465c71;	
+    width: 100%;
+}
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+.nombreform
+{
+	color:#ffffff;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+    font-family:Verdana;
+    font-size:18px;
+    font-weight:bold;   
+	background-color:#465c71;	
+    width: 100%;
+}
+.subnombreform
+{
+	color:#ffffff;
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+    font-family:Verdana;
+    font-size:11px;
+    font-weight:bold;   
+	background-color:#465c71;	
+    width: 100%;
+}
+.direccion
+{
+    width:450px;
+}
+.org_geografica
+{
+    width:650px;
+}
+.buttons2 {
+   	font:normal 10px Arial;
+	color: #ffffff;	
+	padding: 4px 5px;	
+	text-decoration: none;
+	font-weight: bolder /*bold*/;
+	cursor:pointer;	
+	letter-spacing: 0px;
+	border:1px solid #000000;
+	border-top:3px solid #000000;
+	border-left:3px solid #000000;
+	border-right:3px solid #000000;
+	border-bottom:3px solid #000000;
+	background:#cc0000;
+}
+.buttons2:hover  
+{
+	color: #ffffff;	
+    background: #000000; 
+ 	border:1px solid #ffffff;
+	border-top:3px solid #cc0000;
+	border-left:3px solid #cc0000;
+	border-right:3px solid #cc0000;
+	border-bottom:3px solid #cc0000;
+	}
+.buttons2:disabled { background:#C4E4EA; color:#006699;}
+#mensajesAyuda
+{
+	width:160px;
+	font-family:Verdana;
+	font-size:10px;
+	border:1px solid #000000;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	text-align:center;
+	background-color:#C4E4EA; 
+}
+#ayudaTitulo
+{
+	background-color:#006699; 
+	color:#C4E4EA; 
+	padding:1px;
+}
+#ayudaTexto
+{
+	vertical-align:middle;
+	padding:2px;
+}
+.alerta 
+{
+    color:Red;
+    font-family:Arial;
+    font-size:12px;
+}
+.campoerror
+{
+    background-color:#ffeaea;
+}
+.textolargo
+{
+    width:600px;
+    height:100px;
+}
+.textGrid
+{
+    font-size:10px;
+    width:40px;
+}
